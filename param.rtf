@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red24\green24\blue24;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c12157\c12157;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 char_small\
+	batch_size=16\
+	context_length=64\
+	n_head=4\
+	n_layer=2\
+	learning_rate=1e-3\
+	dropout=0.2\
+	n_embed=128\
+	max_iters=30000\
+	n_param=424K\
+	final_layer_norm=False\
+	temperature=1.0\
+	vocab_size=77\
+	tokens=
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+4871678
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+char_large\
+	batch_size=32\
+	context_length=256\
+	n_head=6\
+	n_layer=6\
+	learning_rate=3e-4\
+	dropout=0.2\
+	n_embed=384\
+	max_iters=10000\
+	n_param=10.8M\
+	final_layer_norm=False\
+	temperature=1.0\
+	vocab_size=77\
+	tokens=
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+4871678
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+subword_small\
+	batch_size=16\
+	context_length=256\
+	n_head=4\
+	n_layer=2\
+	learning_rate=6e-4\
+	dropout=0.2\
+	n_embed=128\
+	max_iters=60000\
+	n_param=13.3M\
+	final_layer_norm=False\
+	temperature=1.0\
+	vocab_size=50257\
+	tokens=1713672\
+	with_play_names=True\
+\
+subword_large\
+	batch_size=32/16\
+	context_length=512/256\
+	n_head=6\
+	n_layer=6\
+	learning_rate=6e-4\
+	dropout=0.2\
+	n_embed=384\
+	max_iters=30000/5000\
+	n_param=49.5M/49.3M\
+	final_layer_norm=True\
+	temperature=1.0,1.5\
+	vocab_size=50257\
+	tokens=1574059\
+	with_play_names=False\
+	bias=True/False}
